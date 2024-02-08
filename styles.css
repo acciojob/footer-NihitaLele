@@ -1,1 +1,91 @@
-/* your code here */
+.content {
+    background-color: black;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.top {
+    display: flex;
+    color: white;
+    position: relative;
+}
+
+.logo-details {
+    margin: 25px 40px 5px;
+    font-size: 30px;
+}
+
+.media-icons {
+    margin: 25px 40px 5px;
+    position: absolute;
+    right: 5px;
+}
+
+.media-icons a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.icon {
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px none white;
+    margin-left: 10px;
+}
+.link-boxes{
+    margin: 25px 25px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.link-boxes ul {
+    list-style: none;
+}
+.link-boxes a {
+    text-decoration: none;
+    color: inherit;
+}
+.link-boxes h6{
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 10px;
+    position: relative;
+}
+.link-boxes li{
+    padding: 5px;
+    font-size: small;
+    color: rgb(153, 148, 148);
+}
+.link-boxes h6::after {
+    content: ''; 
+    position: absolute;
+    bottom: -2px; 
+    left: 0; 
+    width: 35%;  
+    height: 2px;  
+    background-color: white;  
+}
+.bottom-details{
+    display: flex;
+    background-color: #2C303A;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    margin: 0px;
+    justify-content: space-between;
+    padding-inline: 60px;
+    color: #A6A8AC;
+}
+@media screen and (max-width: 550px) {
+     .link-boxes{
+        display: flex;
+        flex-direction: column;
+     }
+     .logo-details {
+   font-size: 25px;
+     }
+     .media-icons{
+        font-size: 10px;
+     }
+
+}
